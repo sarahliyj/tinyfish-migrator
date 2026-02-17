@@ -1,0 +1,14 @@
+<div>
+  <input #searchInput (input)="filterUsers(searchInput.value)" />
+  <div *ngIf="users$ | async as users">
+    <ul>
+      <li *ngFor="let user of users">
+        {{ user.name }}
+      </li>
+    </ul>
+    <div [ngSwitch]="users.length">
+      <p *ngSwitchCase="0">No users found</p>
+      <p *ngSwitchDefault>{{ users.length }} users found</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+{
+  "name": "tinyfish-migrator",
+  "version": "1.0.0",
+  "description": "MCP server that provides evidence-based migration assessments, powered by TinyFish",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "tinyfish-migrator": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "mcp",
+    "migration",
+    "vue",
+    "react",
+    "angular",
+    "webpack",
+    "vite",
+    "typescript",
+    "express",
+    "fastify"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "glob": "^13.0.5",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.3",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  }
+}
