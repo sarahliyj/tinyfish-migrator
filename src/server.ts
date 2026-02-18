@@ -53,8 +53,16 @@ export function findMatchingPredefinedProfile(
     "react-class-to-hooks": [["react class", "react classes", "class components"], ["react hooks", "hooks", "functional components"]],
     "webpack-to-vite": [["webpack"], ["vite"]],
     "js-to-typescript": [["javascript", "js"], ["typescript", "ts"]],
-    "angular-legacy-to-modern": [["angular legacy", "angularjs", "angular.js", "angular 1"], ["angular modern", "angular 2+", "angular"]],
+    "angular-legacy-to-modern": [["angular legacy", "angular 14"], ["angular modern", "angular 17", "angular standalone", "angular signals"]],
     "express-to-fastify": [["express", "express.js", "expressjs"], ["fastify", "fastify.js"]],
+    "angularjs-to-angular": [["angularjs", "angular.js", "angular 1", "angular 1.x"], ["angular 2", "angular 2+", "angular modern", "angular"]],
+    "python2-to-python3": [["python 2", "python2", "py2"], ["python 3", "python3", "py3"]],
+    "mysql-to-postgresql": [["mysql"], ["postgresql", "postgres", "pg"]],
+    "cra-to-nextjs": [["create react app", "cra", "react-scripts"], ["next.js", "nextjs", "next"]],
+    "jquery-to-vanilla": [["jquery", "jquery.js"], ["vanilla js", "vanilla javascript", "native js", "plain js"]],
+    "rest-to-graphql": [["rest", "rest api", "restful"], ["graphql", "graph ql", "apollo"]],
+    "java-to-kotlin": [["java"], ["kotlin", "kt"]],
+    "commonjs-to-esm": [["commonjs", "cjs", "require"], ["esm", "es modules", "es module", "esmodules", "import"]],
   };
 
   for (const [profileId, [sourceAliases, targetAliases]] of Object.entries(aliases)) {

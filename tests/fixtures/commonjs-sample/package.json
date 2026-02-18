@@ -1,0 +1,11 @@
+{
+  "name": "commonjs-sample",
+  "version": "1.0.0",
+  "dependencies": {
+    "esm": "^3.2.25"
+  },
+  "devDependencies": {
+    "@babel/register": "^7.22.0",
+    "ts-node": "^10.9.1"
+  }
+}

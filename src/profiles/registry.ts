@@ -7,6 +7,14 @@ import { webpackToViteProfile } from "./webpack-to-vite.js";
 import { jsToTypescriptProfile } from "./js-to-typescript.js";
 import { angularLegacyToModernProfile } from "./angular-legacy-to-modern.js";
 import { expressToFastifyProfile } from "./express-to-fastify.js";
+import { angularjsToAngularProfile } from "./angularjs-to-angular.js";
+import { python2ToPython3Profile } from "./python2-to-python3.js";
+import { mysqlToPostgresqlProfile } from "./mysql-to-postgresql.js";
+import { craToNextjsProfile } from "./cra-to-nextjs.js";
+import { jqueryToVanillaProfile } from "./jquery-to-vanilla.js";
+import { restToGraphqlProfile } from "./rest-to-graphql.js";
+import { javaToKotlinProfile } from "./java-to-kotlin.js";
+import { commonjsToEsmProfile } from "./commonjs-to-esm.js";
 
 const profiles = new Map<string, MigrationProfile>();
 
@@ -16,6 +24,14 @@ profiles.set(webpackToViteProfile.id, webpackToViteProfile);
 profiles.set(jsToTypescriptProfile.id, jsToTypescriptProfile);
 profiles.set(angularLegacyToModernProfile.id, angularLegacyToModernProfile);
 profiles.set(expressToFastifyProfile.id, expressToFastifyProfile);
+profiles.set(angularjsToAngularProfile.id, angularjsToAngularProfile);
+profiles.set(python2ToPython3Profile.id, python2ToPython3Profile);
+profiles.set(mysqlToPostgresqlProfile.id, mysqlToPostgresqlProfile);
+profiles.set(craToNextjsProfile.id, craToNextjsProfile);
+profiles.set(jqueryToVanillaProfile.id, jqueryToVanillaProfile);
+profiles.set(restToGraphqlProfile.id, restToGraphqlProfile);
+profiles.set(javaToKotlinProfile.id, javaToKotlinProfile);
+profiles.set(commonjsToEsmProfile.id, commonjsToEsmProfile);
 
 export function getProfile(id: string): MigrationProfile | undefined {
   return profiles.get(id);

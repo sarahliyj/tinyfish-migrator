@@ -1,0 +1,7 @@
+{
+  "name": "jquery-sample",
+  "version": "1.0.0",
+  "dependencies": {
+    "jquery": "^3.7.0"
+  }
+}

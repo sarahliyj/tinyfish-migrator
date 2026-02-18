@@ -12,8 +12,16 @@ An MCP server that gives any AI assistant the ability to analyze codebases and g
 | `js-to-typescript` | JavaScript | TypeScript |
 | `angular-legacy-to-modern` | Angular 14 | Angular 17+ (standalone, signals) |
 | `express-to-fastify` | Express | Fastify |
+| `angularjs-to-angular` | AngularJS 1.x | Angular 2+ |
+| `python2-to-python3` | Python 2 | Python 3 |
+| `mysql-to-postgresql` | MySQL | PostgreSQL |
+| `cra-to-nextjs` | Create React App | Next.js |
+| `jquery-to-vanilla` | jQuery | Vanilla JS |
+| `rest-to-graphql` | REST API | GraphQL |
+| `java-to-kotlin` | Java | Kotlin |
+| `commonjs-to-esm` | CommonJS | ES Modules |
 
-The right profile is **auto-detected** from your project's `package.json`.
+JS/TS profiles are **auto-detected** from your project's `package.json`. Non-JS profiles (Python, Java, SQL) require explicit `profile_id` selection or use `analyze_custom_migration`.
 
 ## Setup
 

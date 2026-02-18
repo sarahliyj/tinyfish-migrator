@@ -210,12 +210,60 @@ describe("findMatchingPredefinedProfile", () => {
 
   it("matches AngularJS to Angular", () => {
     expect(findMatchingPredefinedProfile("AngularJS", "Angular")).toBe(
+      "angularjs-to-angular",
+    );
+  });
+
+  it("matches Angular 14 to Angular 17", () => {
+    expect(findMatchingPredefinedProfile("Angular 14", "Angular 17")).toBe(
       "angular-legacy-to-modern",
     );
   });
 
+  it("matches Python 2 to Python 3", () => {
+    expect(findMatchingPredefinedProfile("Python 2", "Python 3")).toBe(
+      "python2-to-python3",
+    );
+  });
+
+  it("matches MySQL to PostgreSQL", () => {
+    expect(findMatchingPredefinedProfile("MySQL", "PostgreSQL")).toBe(
+      "mysql-to-postgresql",
+    );
+  });
+
+  it("matches CRA to Next.js", () => {
+    expect(findMatchingPredefinedProfile("Create React App", "Next.js")).toBe(
+      "cra-to-nextjs",
+    );
+  });
+
+  it("matches jQuery to Vanilla JS", () => {
+    expect(findMatchingPredefinedProfile("jQuery", "Vanilla JS")).toBe(
+      "jquery-to-vanilla",
+    );
+  });
+
+  it("matches REST to GraphQL", () => {
+    expect(findMatchingPredefinedProfile("REST API", "GraphQL")).toBe(
+      "rest-to-graphql",
+    );
+  });
+
+  it("matches Java to Kotlin", () => {
+    expect(findMatchingPredefinedProfile("Java", "Kotlin")).toBe(
+      "java-to-kotlin",
+    );
+  });
+
+  it("matches CommonJS to ESM", () => {
+    expect(findMatchingPredefinedProfile("CommonJS", "ES Modules")).toBe(
+      "commonjs-to-esm",
+    );
+  });
+
   it("returns undefined for novel migration", () => {
-    expect(findMatchingPredefinedProfile("Java", "Python")).toBeUndefined();
+    expect(findMatchingPredefinedProfile("Perl", "Python")).toBeUndefined();
   });
 
   it("returns undefined for Flask to Django", () => {

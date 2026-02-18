@@ -1,0 +1,13 @@
+<div ng-app="myApp">
+  <div ng-controller="MainController">
+    <input ng-model="searchQuery" placeholder="Search users...">
+    <div ng-show="loading">Loading...</div>
+    <div ng-hide="loading">
+      <ul>
+        <li ng-repeat="user in filteredUsers">
+          {{ user.name | capitalize }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
